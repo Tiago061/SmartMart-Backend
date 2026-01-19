@@ -3,10 +3,10 @@ from datetime import datetime
 import csv
 import codecs
 from sqlalchemy.orm import Session
-from app.database import SessionLocal
-from app.schemas import SaleCreate
-from app.crud import create_sale, get_sales
-from app.csv_utils import read_csv
+from ..database import SessionLocal
+from ..schemas import SaleCreate
+from ..crud import create_sale, get_sales
+from ..csv_utils import read_csv
 
 router = APIRouter(prefix="/sales")
 

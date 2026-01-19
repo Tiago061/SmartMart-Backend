@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, UploadFile, File, HTTPException
 from sqlalchemy.orm import Session
-from app.database import SessionLocal
-from app.schemas import CategoryCreate
-from app.crud import create_category, get_categories
-from app.csv_utils import read_csv 
+from ..database import SessionLocal
+from ..schemas import CategoryCreate
+from ..crud import create_category, get_categories
+from ..csv_utils import read_csv 
 
 router = APIRouter(prefix="/categories", tags=["categories"])
 
