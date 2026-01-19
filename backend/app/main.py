@@ -9,7 +9,7 @@ app = FastAPI(title="SmartMart API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"], # Domínio do seu Next.js
+    allow_origins=["https://smartmart-solutions-murex.vercel.app/"], # Domínio do seu Next.js
     allow_credentials=True,
     allow_methods=["*"], # Permite todos os métodos (GET, POST, etc.)
     allow_headers=["*"], # Permite todos os headers
